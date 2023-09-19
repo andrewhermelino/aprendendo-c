@@ -14,6 +14,10 @@ Abra o terminal no root e digite o seguinte comando:
 ```bash
 ./run.sh <caminho relativo>
 ```
+Caso queira que os logs de compilação sejam exibidas, adicione a flag `-c` no fim do comando:
+```bash
+./run.sh <caminho relativo> -c
+```
 
 ## Como isso funciona?
 O arquivo `run.sh` localizado no root do repositório, é um script de shell que deve receber como parâmetro o caminho relativo do arquivo .c para ser executado.
