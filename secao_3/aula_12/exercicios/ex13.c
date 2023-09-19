@@ -1,12 +1,12 @@
 #include <stdio.h>
-// Leia uma distância em milhas e apresente-a convertida em quilômetros.
-// A fórmula de conversão é: K = 1.61 * M, sendo K a distância em quilômetros e M em milhas.
+// Leia uma distância em quilômetros e apresente-a convertida em milhas.
+// A fórmula de conversão é: M = K/1.61, sendo K a distância em quilômetros e M em milhas.
 
 int main() {
     // Declara variáveis
     char grandeza[] = "distância";
-    char unidadeInicial[] = "milhas";
-    char unidadeFinal[] = "quilômetros";
+    char unidadeInicial[] = "quilômetros";
+    char unidadeFinal[] = "milhas";
     float valorInicial, valorFinal;
 
     // Imprime cabeçalho
@@ -17,7 +17,7 @@ int main() {
     scanf("%f", &valorInicial);
 
     // Calcula valor final aplicando a fórmula
-    valorFinal = valorInicial * 1.61;
+    valorFinal = valorInicial / 1.61;
 
     // Imprime resultado final
     printf("---\n");

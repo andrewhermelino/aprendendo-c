@@ -1,12 +1,16 @@
 #include <stdio.h>
-// Leia uma distância em milhas e apresente-a convertida em quilômetros.
-// A fórmula de conversão é: K = 1.61 * M, sendo K a distância em quilômetros e M em milhas.
+// Leia um valor de massa em quilogramas e apresente-o convertido em libras.
+// A fórmula de conversão é: L = K / 0.45, sendo K a massa em quilogramas e L a massa em libras.
+
+double formulaDeConvercao(float x) {
+    return x / 0.45;
+}
 
 int main() {
     // Declara variáveis
-    char grandeza[] = "distância";
-    char unidadeInicial[] = "milhas";
-    char unidadeFinal[] = "quilômetros";
+    char grandeza[] = "massa";
+    char unidadeInicial[] = "quilogramas";
+    char unidadeFinal[] = "libras";
     float valorInicial, valorFinal;
 
     // Imprime cabeçalho
@@ -17,7 +21,7 @@ int main() {
     scanf("%f", &valorInicial);
 
     // Calcula valor final aplicando a fórmula
-    valorFinal = valorInicial * 1.61;
+    valorFinal = formulaDeConvercao(valorInicial);
 
     // Imprime resultado final
     printf("---\n");

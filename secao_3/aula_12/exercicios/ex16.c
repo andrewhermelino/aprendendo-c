@@ -1,12 +1,12 @@
 #include <stdio.h>
-// Leia uma distância em milhas e apresente-a convertida em quilômetros.
-// A fórmula de conversão é: K = 1.61 * M, sendo K a distância em quilômetros e M em milhas.
+// Leia um valor de comprimento em polegadas e apresente-o convertido em centímetros.
+// A fórmula de conversão é: C = P * 2.54, sendo C o comprimento em centímetros e P o comprimento em polegadas
 
 int main() {
     // Declara variáveis
-    char grandeza[] = "distância";
-    char unidadeInicial[] = "milhas";
-    char unidadeFinal[] = "quilômetros";
+    char grandeza[] = "comprimento";
+    char unidadeInicial[] = "polegadas";
+    char unidadeFinal[] = "centímetros";
     float valorInicial, valorFinal;
 
     // Imprime cabeçalho
@@ -17,7 +17,7 @@ int main() {
     scanf("%f", &valorInicial);
 
     // Calcula valor final aplicando a fórmula
-    valorFinal = valorInicial * 1.61;
+    valorFinal = valorInicial * 2.54;
 
     // Imprime resultado final
     printf("---\n");

@@ -1,12 +1,12 @@
 #include <stdio.h>
-// Leia uma distância em milhas e apresente-a convertida em quilômetros.
-// A fórmula de conversão é: K = 1.61 * M, sendo K a distância em quilômetros e M em milhas.
+// Leia um ângulo em graus e apresente-o convertido em radianos.
+// A fórmula de conversão é: R = G * pi / 180, sendo G o ângulo em graus e R em radianos e pi = 3.14
 
 int main() {
     // Declara variáveis
-    char grandeza[] = "distância";
-    char unidadeInicial[] = "milhas";
-    char unidadeFinal[] = "quilômetros";
+    char grandeza[] = "graus";
+    char unidadeInicial[] = "ângulo";
+    char unidadeFinal[] = "radianos";
     float valorInicial, valorFinal;
 
     // Imprime cabeçalho
@@ -17,7 +17,7 @@ int main() {
     scanf("%f", &valorInicial);
 
     // Calcula valor final aplicando a fórmula
-    valorFinal = valorInicial * 1.61;
+    valorFinal = valorInicial * 3.14 / 180;
 
     // Imprime resultado final
     printf("---\n");

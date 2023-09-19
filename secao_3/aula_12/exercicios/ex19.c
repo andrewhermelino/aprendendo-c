@@ -1,12 +1,16 @@
 #include <stdio.h>
-// Leia uma distância em milhas e apresente-a convertida em quilômetros.
-// A fórmula de conversão é: K = 1.61 * M, sendo K a distância em quilômetros e M em milhas.
+// Leia um valor de volume em litros e apresente-o convertido em metros cúbicos m^3.
+// A fórmula de conversão é: M = L / 1000, sendo L o volume em litros e M o volume em metros cúbicos.
+
+double formulaDeConvercao(float x) {
+    return x / 1000;
+}
 
 int main() {
     // Declara variáveis
-    char grandeza[] = "distância";
-    char unidadeInicial[] = "milhas";
-    char unidadeFinal[] = "quilômetros";
+    char grandeza[] = "volume";
+    char unidadeInicial[] = "litros";
+    char unidadeFinal[] = "metros cúbicos";
     float valorInicial, valorFinal;
 
     // Imprime cabeçalho
@@ -17,7 +21,7 @@ int main() {
     scanf("%f", &valorInicial);
 
     // Calcula valor final aplicando a fórmula
-    valorFinal = valorInicial * 1.61;
+    valorFinal = formulaDeConvercao(valorInicial);
 
     // Imprime resultado final
     printf("---\n");

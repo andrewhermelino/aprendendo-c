@@ -4,17 +4,17 @@
 
 int main() {
     // Declara variáveis
-    char grandesa[] = "velocidade";
+    char grandeza[] = "velocidade";
     char unidadeInicial[] = "m/s";
     char unidadeFinal[] = "km/h";
     float valorInicial, valorFinal;
 
     // Imprime cabeçalho
-    printf("# Converta %s em %s para %s\n", grandesa, unidadeInicial, unidadeFinal);
-    printf("# Converta %s em %s para %s\n", grandesa, unidadeInicial, unidadeFinal);
+    printf("# Converta %s em %s para %s\n", grandeza, unidadeInicial, unidadeFinal);
+    printf("# Converta %s em %s para %s\n", grandeza, unidadeInicial, unidadeFinal);
     
     // Obtém valor inicial
-    printf("Informe %s em %s: ", grandesa, unidadeInicial);
+    printf("Informe %s em %s: ", grandeza, unidadeInicial);
     scanf("%f", &valorInicial);
 
     // Calcula valor final aplicando a fórmula
