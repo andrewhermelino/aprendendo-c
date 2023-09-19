@@ -9,7 +9,8 @@ printf("Essa é uma mensagem em C :D\n");
 Essa função recebe como primeiro parâmetro uma string com a mensagem que será exibida, e os restantes dos parâmetros serão as variáveis usadas para alimentar a mensagem dinâmicamente.
 
 ### Imprimindo uma string
-> No caso do C não existe o tipo _string_ em sí, então é usado um array de caracteres
+> No caso do C não existe o tipo _string_ em sí, então é usado um array de caracteres.
+
 Para imprimir uma string será usado o especificador de formato `%s`
 ```c
 char heroi[] = "Homem de ferro";
