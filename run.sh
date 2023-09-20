@@ -23,7 +23,7 @@ executavel="${arquivo_c%.c}.exe"
 # Compila o arquivo C usando o GCC (GNU Compiler Collection)
 clear
 echo "> Iniciando compilação"
-gcc "$diretorio_arquivo_c" -o ./"$diretorio_comp"/"$executavel"
+gcc "$diretorio_arquivo_c" -o ./"$diretorio_comp"/"$executavel" -lm
 echo "> Compilação bem-sucedida!"
 echo "> Executando o programa..."
 
@@ -37,7 +37,7 @@ if [ $? -eq 0 ]; then
         clear
         # Executa o arquivo executável
         "./$diretorio_comp/$executavel"
-    fi  # Adicionei esta linha para fechar o if interno
+    fi
 else
     echo "> Erro durante a compilação"
 fi
