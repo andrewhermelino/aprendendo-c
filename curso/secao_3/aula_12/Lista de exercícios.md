@@ -68,11 +68,15 @@ Faça um programa que receba os valores de A e B e calcule o valor da hipotenusa
     - O terceiro receberá o restante;
     Calcule e imprima a quantia ganha por cada um dor ganhadores.
 40. Uma empresa contrata um encanador a R$ 30,00 por dia. Faça um programa que solicite o número de dias trabalhados pelo encanador e imprima a quantia líquida que deverá ser paga, sabendo-se que são descontados 8% para imposto de renda.
-41.
-42.
-43.
-44.
-45.
+41. Faça um programa que leia o valor da hora de trabalho (em reais) e número de horas trabalhadas no mês. imprima o valor a ser pago ao funcionário, adicionando 10% sobre o valor calculado.
+42. Receba o salário-base de um funcionário. Calcule e imprima o salário a receber, sabendo-se que esse funcionário tem uma gratificação de 5% sobre o salário-base. Além disso, ele paga 7% de imposto sobre o salário-base.
+43. Escreva um programa de ajuda para vendedores. A partir de um valor total lido, mostre:
+    - o total a pagar com desconto de 10%;
+    - o valor de cada parcela, no parcelamento de 3x sem juros;
+    - a comissão do vendedor, no caso da venda ser a vista (5% sobre o valor com desconto);
+    - a comissão do vendedor, no caso da venda ser parcelada (5% sobre o valor total);
+44. Receba a altura do degrau de uma escada e a altura que o usuário deseja alcançar subindo a escada. Calcule e mostre quantos degraus o usuário deverá subir para atingir seu objetivo.
+45. Faça um programa para converter uma letra maiúscula em letra minúscula. Use a tabela ASCII para resolver o problema.
 46.
 47.
 48.
