@@ -7,7 +7,7 @@
 6. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit.
 A fórmula de conversão é: **F = C * (9/5) + 32**, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
 7. Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius.
-A fórmula de conversão é: **C = 5 * (F - 32)/9**, sendo C a temperatura em Celsius e F a temperatura em Fahrenheit
+A fórmula de cC:\Users\Andrew\AppData\Local\Temp\Relatório de pedidos enviados para a fábrica_17481328245647415680.pdfonversão é: **C = 5 * (F - 32)/9**, sendo C a temperatura em Celsius e F a temperatura em Fahrenheit
 8. Leia uma temperatura em graus Kelvin e apresente-a convertida em graus Celsius.
 A fórmula de conversão é: **C = K - 273.15**, sendo C a temperatura em Celsius e K a temperatura em Kelvin.
 9. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Kelvin.
@@ -77,11 +77,13 @@ Faça um programa que receba os valores de A e B e calcule o valor da hipotenusa
     - a comissão do vendedor, no caso da venda ser parcelada (5% sobre o valor total);
 44. Receba a altura do degrau de uma escada e a altura que o usuário deseja alcançar subindo a escada. Calcule e mostre quantos degraus o usuário deverá subir para atingir seu objetivo.
 45. Faça um programa para converter uma letra maiúscula em letra minúscula. Use a tabela ASCII para resolver o problema.
-46.
-47.
-48.
-49.
-50.
-51.
-52.
-53.
+46. Faça um programa que leia um número inteiro positivo de três dígitos (de 100 a 999). Gere outro número formado pelos dígitos invertidos do número lido. Exemplo:
+    - Número lido = 123
+    - Número gerado = 321
+47. Leia um número inteiro de 4 dígitos (de 1000 a 9999) e imprima 1 dígito por linha.
+48. Leia um valor inteiro em segundos e imprima-o em horas, minutos e segundos.
+49. Faça um programa para que leia o horário (hora, minuto e segundo) de inicio e a duração em segundos, de uma experiência biológica. O programa deve resultar com o novo horário (hora, minuto e segundo) do termino da mesma.
+50. Implemente um programa que calcule o ano de nascimento de uma pessoa apartir de sua idade e do ano atual.
+51. Escreva um programa que leia as coordenadas x e y de pontos no R^2 e calcule sua distância da origem (0, 0).
+52. Três amigos jogaram na loteria. Caso eles ganhem, o prêmio deve ser repartido proporcionalmente ao valor que cada um deu para a realização da aposta. Faça um programa que leia quanto cada apostador investiu, o valor do prêmio, e imprima quanto cada um ganharia do prêmio com base no valor investido.
+53. Faça um programa para ler as dimensões de um terreno (comprimento c e largura l), bem como o preço do metro de tela p. Imprima o custo para cercar este mesmo terreno com tela.
