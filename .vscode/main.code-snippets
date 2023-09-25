@@ -18,7 +18,7 @@
 			"",
 			"\tprintf(\"\\n\\n\");",
 			"\treturn 0;",
-			"}"
+			"}\n"
 		],
 		"description": "Template padrão de um programa em C"
 	}
