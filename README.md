@@ -26,3 +26,6 @@ Ele executa os seguintes passos:
 2. Salva o executável na pasta não versionada `_comp` no root. Se esta pasta não existir ainda ele será criado
 3. Limpa o terminal em que está sendo executado
 4. Executa o arquivo compilado
+
+# Instalações
+Dentro da pasta `instalacoes` você encontra arquivos com instruções e instaladores para instalar as dependências necessárisas para rodar os programas em C, dependendo do seu sistema operacional
