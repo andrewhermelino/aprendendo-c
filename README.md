@@ -1,7 +1,7 @@
 # Aprendendo C
 Programas e exercícios criados durante o [curso de programação em C da Udemy](https://www.udemy.com/course/programacao-em-c-essencial/).
 
-
+<img alt="" src="docs/imagens/geek_university_programacao_em_c_essencial.png" style="width: 500px;"/>
 
 # Executando um programa em C
 Clique com o botão direito na aba do arquivo aberto ou na árvore de arquivos e clique em "Copiar caminho relativo"
