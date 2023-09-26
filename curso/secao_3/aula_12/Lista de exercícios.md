@@ -1,16 +1,16 @@
 # Lista de exercícios
-1. Faça um programa que leia um número inteiro e o imprima.
-2. Faça um programa que leia um número real e o imprima.
-3. Peça ao usuário para digitar três valores inteiros e imprima a soma deles.
-4. Leia um número real e imprima o resultado do quadrado desse número.
-5. Leia um número real e imprima a quinta parte deste número.
-6. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit.
-A fórmula de conversão é: **F = C * (9/5) + 32**, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
-7. Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius.
-A fórmula de cC:\Users\Andrew\AppData\Local\Temp\Relatório de pedidos enviados para a fábrica_17481328245647415680.pdfonversão é: **C = 5 * (F - 32)/9**, sendo C a temperatura em Celsius e F a temperatura em Fahrenheit
-8. Leia uma temperatura em graus Kelvin e apresente-a convertida em graus Celsius.
-A fórmula de conversão é: **C = K - 273.15**, sendo C a temperatura em Celsius e K a temperatura em Kelvin.
-9. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Kelvin.
+01. Faça um programa que leia um número inteiro e o imprima.
+02. Faça um programa que leia um número real e o imprima.
+03. Peça ao usuário para digitar três valores inteiros e imprima a soma deles.
+04. Leia um número real e imprima o resultado do quadrado desse número.
+05. Leia um número real e imprima a quinta parte deste número.
+06. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit.
+0A fórmula de conversão é: **F = C * (9/5) + 32**, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+07. Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius.
+0A fórmula de cC:\Users\Andrew\AppData\Local\Temp\Relatório de pedidos enviados para a fábrica_17481328245647415680.pdfonversão é: **C = 5 * (F - 32)/9**, sendo C a temperatura em Celsius e F a temperatura em Fahrenheit
+08. Leia uma temperatura em graus Kelvin e apresente-a convertida em graus Celsius.
+0A fórmula de conversão é: **C = K - 273.15**, sendo C a temperatura em Celsius e K a temperatura em Kelvin.
+09. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Kelvin.
 A fórmula de conversão é: **K = C + 273.15**, sendo C a temperatura em Celsius e K a temperatura em Kelvin.
 10. Leia uma velocidade em km/h (quilômetros por hora) e apresente-a convertida em m/s (metros por segundo).
 A fórmula de conversão é: **M = K/3.6**, sendo K a velocidade em km/h e M em m/s
