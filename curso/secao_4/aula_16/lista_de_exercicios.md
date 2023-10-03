@@ -14,7 +14,7 @@
   - Homens: (72.7 * h) - 58
   - Mulheres: (62.1 * h) - 44.7
 11. Escreva um programa que leia um número inteiro maior do que zero e devolva, na tela, a soma de todos os seus algarismos. Por exemplo, o número 251 corresponderá o valor 8 (2 + 5 + 1). Se o número lido não for maior do que zero, o programa terminará com a mensagem `Número inválido`.
-12.
+12. Ler um número inteiro. Se o número lido for negativo, escreva a mensagem "Número inválido". Se o número for positivo, calcular o logaritmo deste número.
 13.
 14.
 15.
