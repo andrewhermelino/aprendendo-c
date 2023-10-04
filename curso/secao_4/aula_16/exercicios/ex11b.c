@@ -24,12 +24,11 @@ void imprimirCalculo(int numero, int soma);
 int main() {
     int numero, soma = 0;
 
-    lerNumero(&numero);
+    printf("# Somar todos os algarismos de um número\n");
 
-    if (isNumeroValido(numero) == false) {
-        printf("Erro: informe um valor válido!\n");
-        return 1;
-    }
+    do {
+        lerNumero(&numero);
+    } while (isNumeroValido(numero) == false);
     
     soma = obterSomaAlgarismos(numero);
 
@@ -40,9 +39,11 @@ int main() {
 }
 
 void lerNumero(int *numeroPointer) {
-    printf("# Somar todos os algarismos de um número\n");
     printf("Digite um valor positivo: ");
-    scanf("%d", numeroPointer);
+    if (scanf("%d", numeroPointer) != 1) {
+        while (getchar() != '\n');
+        *numeroPointer = -1;
+    };
 }
 
 bool isNumeroValido(int numero) {
