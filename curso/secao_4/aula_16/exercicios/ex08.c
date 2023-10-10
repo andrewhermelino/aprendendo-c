@@ -7,19 +7,15 @@
 // informado ao usuário e o programa termina.
 
 int lerNota(int i, float *notaPointer);
+int isNotaValida(int nota);
 
 int main() {
     float nota1, nota2;
 
     printf("# Calcular média de duas notas\n");
 
-    if (!lerNota(1, &nota1)) {
-        return 1;
-    }
-
-    if (!lerNota(2, &nota2)) {
-        return 1;
-    }
+    lerNota(1, &nota1);
+    lerNota(2, &nota2);
 
     printf("Média: %.2f", (nota1 + nota2) / 2);
 
@@ -28,14 +24,22 @@ int main() {
 }
 
 int lerNota(int i, float *notaPointer) {
-    float nota;
-    printf("Informe a nota %d: ", i);
-    scanf("%f", &nota);
-    *notaPointer = nota;
+    do {
+        printf("Informe a nota %d: ", i);
 
-    if (nota > 0 && nota < 10) {
-        return 1;
+        if (scanf("%f", notaPointer) == 0) {
+            *notaPointer = -1;
+        }
+
+        if (!isNotaValida(*notaPointer)) {
+            printf("Nota inválida!\n\n");
+        }
+    } while (!isNotaValida(*notaPointer));   
+}
+
+int isNotaValida(int nota) {
+    if (nota > 10 || nota < 0) {
+        return 0;
     }
-    printf("Nota inválida!\n\n");
-    return 0;
+    return 1;
 }
