@@ -53,11 +53,44 @@ Opção:
 
 23. Determine se um determinado ano lido é bissexto. Sendo que um ano é bissexto se for divisível por 400 ou se for divisível por 4 e não for divisível por 100. Por exemplo: 1988, 1992, 1996.
 24. Uma empresa vende o mesmo produto para quatro diferentes estados. Cada estado possui uma taxa diferente de imposto sobre o produto (MG 7%; SP 12%; RJ 15%; MS 8%). Faça um programa em que o usuário entre com o valor e o estado destino do produto e o programa retorne o preço final do produto acrescido do imposto do estado em que ele será vendido. Se o estado digitado não for válido, mostrar uma mensagem de erro.
-25.
-26.
-27.
-28.
-29.
+25. Calcule as raízes da equação de 2º grau. Lembrando que:
+    x = (-b ± √Δ) / 2a
+    onde:
+    Δ = b² - 4ac
+    E ax² + bx + c = representa uma equação de 2º grau.
+
+A variável a tem que ser diferente de zero. Caso seja igual, imprima a mensagem "Não é equação de segundo grau".
+
+- Se Δ < 0, não existe real. Imprima a mensagem "Não existe raiz"
+- Se Δ = 0, existe uma raiz real. Imprima a raiz e a mensagem "Raiz única".
+- Se Δ ≥ 0, imprima as duas raízes reais.
+
+26. Leia a distância em Km e a quantidade de litros de gasolina consumidos por um carro em um percurso, calcule o consumo em KM/L e escreva uma mensagem de acordo com a tabela a baixo:
+
+CONSUMO   | Km/L   | MENSAGEM
+----------+--------+-----------------
+menor que | 8      | Venda o carro!
+entre     | 8 e 14 | Econômico!
+maior que | 14     | Super econômico!
+
+27. Escreva um programa que, dada a idade de um nadador, classifique-o em uma das seguintes categorias:
+
+Categoria  | Idade
+-----------+-------------------
+Infantil A | 5 a 7
+Infantil B | 8 a 10
+Juvenil A  | 11 a 13
+Juvenil B  | 14 a 17
+Sênior     | maiores de 18 anos
+
+28. Faça um programa que leia três números inteiros positivos e efetue o cálculo de uma das seguintes médias de acordo com um valor numérico digitado pelo usuário:
+
+a) Geométrica: ³√(x * y * z)
+b) Ponderada: (x + 2 * y + 3 * z) / 6
+c) Harmônica: 1 / (1/x + 1/y + 1/z)
+d) Aritmética: (x + y + z) / 3
+
+29. Faça uma prova de matemática para crianças que estão aprendendo a somar números inteiros menores do que 100. Escolha números aleatórios entre 1 e 100, e mostre na tela a pergunta: "Qual é a soma de a + b?", onde a e b são números aleatórios. Peça a resposta. Faça cinco perguntas ao aluno, e mostre para ele as perguntas e as respostas corretas, além de quantas vezes o aluno acertou.
 30.
 31.
 32.
