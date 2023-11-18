@@ -105,7 +105,20 @@ d) Aritmética: (x + y + z) / 3
 | Maior que 1,70 |   C    |             F             |      I      |
 +-------------------------------------------------------------------+
 
-32.
+32. Escrever um programa que leia o código do produto escolhido do cardápio de uma lanchonete e a quantidade. O programa deve calcular o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um pedido. O cardápio da lanchonete segue o padrão abaixo:
+
++---------------------------------+
+| Especificação  | Código | Preço |
++----------------+--------+-------+
+| Cachoro Quente |    100 |  1.20 |
+| Bauro Simples  |    101 |  1.30 |
+| Bauru com Ovo  |    102 |  1.50 |
+| Hamburguer     |    103 |  1.20 |
+| Cheeseburguer  |    104 |  1.70 |
+| Suco           |    105 |  2.20 |
+| Refrigerante   |    106 |  1.00 |
++---------------------------------+
+
 33.
 34.
 35.
