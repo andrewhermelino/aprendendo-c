@@ -52,7 +52,9 @@ Opção:
 - Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos.
 
 23. Determine se um determinado ano lido é bissexto. Sendo que um ano é bissexto se for divisível por 400 ou se for divisível por 4 e não for divisível por 100. Por exemplo: 1988, 1992, 1996.
+
 24. Uma empresa vende o mesmo produto para quatro diferentes estados. Cada estado possui uma taxa diferente de imposto sobre o produto (MG 7%; SP 12%; RJ 15%; MS 8%). Faça um programa em que o usuário entre com o valor e o estado destino do produto e o programa retorne o preço final do produto acrescido do imposto do estado em que ele será vendido. Se o estado digitado não for válido, mostrar uma mensagem de erro.
+
 25. Calcule as raízes da equação de 2º grau. Lembrando que:
     x = (-b ± √Δ) / 2a
     onde:
@@ -119,11 +121,50 @@ d) Aritmética: (x + y + z) / 3
 | Refrigerante   |    106 |  1.00 |
 +---------------------------------+
 
-33.
-34.
-35.
-36.
-37.
+33. Um produto vai sofrer aumento de acordo com a tabela abaixo. Leia o preço antigo, calcule e escreva o preço novo, e escreva uma mensagem em função do preço novo (de acordo com a segunda tabela).
+
++----------------------------------------------+
+| PREÇO ANTIGO         | PERCENTUAL DE AUMENTO |
++----------------------+-----------------------+
+| até R$ 50            |           5%          |
+| entre R$ 50 e R$ 100 |          10%          |
+| acima de R$ 100      |          15%          |
++----------------------------------------------+
+
+34. Leia a nota e o número de faltas de um aluno, e escreva seu conceito. De acordo com a tabela abaixo, quando o aluno tem mais de 20 faltas ocorre uma redução de conceito.
+
++------------------------------------------------------------------------+
+| NOTA         | CONCEITO (ATÉ 20 FALTAS) | CONCEITO (MAIS DE 20 FALTAS) | 
++--------------+--------------------------+------------------------------+
+| 9.0 até 10.0 |             A            |               B              |
+| 7.5 até 8.9  |             B            |               C              |
+| 5.0 até 7.4  |             C            |               D              |
+| 4.0 até 4.9  |             D            |               E              |
+| 0.0 até 3.9  |             E            |               E              |
++------------------------------------------------------------------------+
+
+35. Leia uma data e determine se ela é válida. Ou seja, verifique se o mês está entre 1 e 12, e se o dia existe naquele mês. Note que Fevereiro tem 29 dias em anos bissextos, e 28 dias em anos não bissextos.
+
+36. Escreva um programa que, dado o valor de venda, imprima a comissão que deverá ser paga ao vendedor. Para calcular a comissão, considere a tabela abaixo:
+
++--------------------------------------------------------------------------------------+
+| Venda mensal                                            | Comissão                   |
++---------------------------------------------------------+----------------------------+
+| Maior ou igual a R$ 100.000,00                          | R$ 700,00 + 16% das vendas |
+| Menor que R$ 100.000,00 e maior ou igual a R$ 80.000,00 | R$ 650,00 + 14% das vendas |
+| Menor que R$ 80.000,00 e maior ou igual a R$ 60.000,00  | R$ 600,00 + 14% das vendas |
+| Menor que R$ 60.000,00 e maior ou igual a 40.000,00     | R$ 550,00 + 14% das vendas |
+| Menor que R$ 40.000,00 e maior ou igual a R$ 20.000,00  | R$ 500,00 + 14% das vendas |
+| Menor que R$ 20.000,00                                  | R$ 400,00 + 14% das vendas |
++--------------------------------------------------------------------------------------+
+
+37. As tarifas de certo parque de estacionamento são as seguintes:
+- 1ª e 2ª hora - R$ 1,00 cada
+- 3ª e 4ª hora - R$ 1,40 cada
+- 5ª hora e seguintes - R$ 2,00 cada
+
+O número de horas a pagar é sempre inteiro e arredondado por excesso. Deste modo, quem estacionar durante 61 minutos pagará por duas horas, que é o mesmo que pagaria se tivesse permanecido 120 minutos. Os momentos de chegada ao parque e partida deste são apresentados na forma de pares de inteiros, representando horas e minutos. Por exemplo, o par 12 50 representará "dez para a uma da tarde". Pretende-se criar um programa que, lidos pelo teclado os momentos de chegada e de partida, escreva na tela o preço cobrado pelo estacionamento. Adimite-se que a chegada e a partida se dão com intervalo não superior a 24 horas. Portanto, se uma dada hora de chegada for superior à da partida, isso não é uma situação de erro, antes significará que a partida ocorreu no dia seguinte ao da chegada.
+
 38.
 39.
 40.
