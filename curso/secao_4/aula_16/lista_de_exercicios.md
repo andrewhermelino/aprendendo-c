@@ -165,7 +165,54 @@ d) Aritmética: (x + y + z) / 3
 
 O número de horas a pagar é sempre inteiro e arredondado por excesso. Deste modo, quem estacionar durante 61 minutos pagará por duas horas, que é o mesmo que pagaria se tivesse permanecido 120 minutos. Os momentos de chegada ao parque e partida deste são apresentados na forma de pares de inteiros, representando horas e minutos. Por exemplo, o par 12 50 representará "dez para a uma da tarde". Pretende-se criar um programa que, lidos pelo teclado os momentos de chegada e de partida, escreva na tela o preço cobrado pelo estacionamento. Adimite-se que a chegada e a partida se dão com intervalo não superior a 24 horas. Portanto, se uma dada hora de chegada for superior à da partida, isso não é uma situação de erro, antes significará que a partida ocorreu no dia seguinte ao da chegada.
 
-38.
-39.
-40.
-41.
+38. Leia uma data de nascimento de uma pessoa fornecida através de três números inteiros: Dia, Mês e Ano.  data válida.
+
+Teste se o dia fornecido é um dia válido:
+dia > 0, dia <= 28 para o mês de fevereiro (29 se o ano for bissexto),
+dia <= 30 em abril, junho, setembro e novembro,
+dia <= 31 nos outros meses.
+
+Teste a validade do mês:
+mês > 0 e mês < 13.
+
+Teste a validade do ano:
+ano <= ano atual (use uma constante definida com o valor igual a 2008).
+
+Imprimir: "data válida" ou "data inválida" no final da execução do programa.
+
+
+39. Uma empresa decide dar um aumento aos seus funcionários de acordo com uma tabela que considera o salário atual e o tempo de serviço de cada funcionário. Os funcionários com menos salário terão um aumento proporcionalmente maior do que os funcionários com salário maior, e conforme o tempo de serviço na empresa, cada funcionário irá receber um bônus adicional de salário. Faça um programa que leia:
+
+- o valor do salário do funcionário
+- o tempo de serviço desse funcionário na empresa (número de anos de trabalho na empresa).
+
+Use as tabelas abaixo para calcular o salário reajustado deste funcionário e imprima o valor do salário final reajustado, ou uma mensagem caso o funcionário não tenha direito a nenhum aumento.
+
+ Salário atual | Reajuste (%) | Tempo de Serviço | Bônus
+---------------+--------------+------------------+-----------
+até 500        |     25%      | abaixo de 1 ano  | sem bônus
+até 1000       |     20%      | de 1 a 3 anos    | 100
+até 1500       |     15%      | de 4 a 6 anos    | 200
+até 2000       |     10%      | de 7 a 10 anos   | 300
+acima de 2000  | Sem reajuste | mais de 10 anos  | 500
+
+40. O custo ao consumidor de um carro novo é a soma do custo de fábrica, da comissão do distribuidor, e dos impostos. A comissão e os impostos são calculados sobre o custo de fábrica, de acordo com a tabela abaixo. Leia o custo de fábrica e escreva o custo ao consumidor.
+
+ Custo de fábrica               | % do distribuidor | % dos impostos
+--------------------------------+-------------------+----------------
+ até R$ 12.000,00               |         5%        |     isento     
+ entre R$ 12.000,00 e 25.000,00 |        10%        |       15%
+ acima de R$ R$25.000,00        |        15%        |       20%
+
+41. Faça um algoritmo que calcule o IMC de uma pessoa e mostre sua classificação de acordo com a tabela abaixo:
+
+ IMC | Classificação
+-------------+---------------
+ <= 18,5     | Abaixo do peso
+ 18,6 a 24,9 | Saudável
+ 25,0 a 29,9 | Peso em excesso
+ 30,0 a 34,9 | Obesidade Grau I
+ 35,0 a 39,9 | Obesidade Grau II (severa)
+ >= 40,0     | Obesidade Grau III (mórbida)
+
+Fórmula: Peso / (altura * altura)

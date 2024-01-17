@@ -26,39 +26,28 @@ int converterMinutosEmHoras(int);
 float calcularTarifaDePeriodoEmHora(int);
 
 int main() {
+    int horaChegada, minutoChegada;
+    int horaSaida, minutoSaida;
 
-    printf("60: %dh\n", converterMinutosEmHoras(60));
-    printf("120: %dh\n", converterMinutosEmHoras(120));
-    printf("180: %dh\n", converterMinutosEmHoras(180));
+    printf("# Calcular valor de estacionamento\n\n");
 
-    printf("---\n");
+    printf("Informe o horário da chegada:\n");
+    lerHora(&horaChegada);
+    lerMinuto(&minutoChegada);
 
-    printf("61: %dh\n", converterMinutosEmHoras(61));
-    printf("121: %dh\n", converterMinutosEmHoras(121));
-    printf("182: %dh\n", converterMinutosEmHoras(182));
-    
-    // int horaChegada, minutoChegada;
-    // int horaSaida, minutoSaida;
+    printf("\nInforme o horário da saída:\n");
+    lerHora(&horaSaida);
+    lerMinuto(&minutoSaida);
 
-    // printf("# Calcular valor de estacionamento\n\n");
+    int horarioEmMinutoChegada = converterHorarioParaHoraEmMinuto(horaChegada, minutoChegada);
+    int horarioEmMinutoSaida = converterHorarioParaHoraEmMinuto(horaSaida, minutoSaida);
 
-    // printf("Informe o horário da chegada:\n");
-    // lerHora(&horaChegada);
-    // lerMinuto(&minutoChegada);
+    int periodoEmMinuto = calcularPeriodoEmMinuto(horarioEmMinutoChegada, horarioEmMinutoSaida);
+    int perioroEmHora = converterMinutosEmHoras(periodoEmMinuto);
 
-    // printf("\nInforme o horário da saída:\n");
-    // lerHora(&horaSaida);
-    // lerMinuto(&minutoSaida);
+    float valorTarifa = calcularTarifaDePeriodoEmHora(perioroEmHora);
 
-    // int horarioEmMinutoChegada = converterHorarioParaHoraEmMinuto(horaChegada, minutoChegada);
-    // int horarioEmMinutoSaida = converterHorarioParaHoraEmMinuto(horaSaida, minutoSaida);
-
-    // int periodoEmMinuto = calcularPeriodoEmMinuto(horarioEmMinutoChegada, horarioEmMinutoSaida);
-    // int perioroEmHora = converterMinutosEmHoras(periodoEmMinuto);
-
-    // float valorTarifa = calcularTarifaDePeriodoEmHora(perioroEmHora);
-
-    // printf("\nValor a pagar: R$ %.2f", valorTarifa);
+    printf("\nValor a pagar (%dh): R$ %.2f", perioroEmHora, valorTarifa);
 
     printf("\n\n");
     return 0;
@@ -69,6 +58,9 @@ void lerHora(int *hora) {
     do {
         printf("Hora: ");
         scanf("%d", &lerHora);
+        if (lerHora < 0 || lerHora > 23) {
+            printf("* informe uma hora válida\n");
+        }
     } while (lerHora < 0 || lerHora > 23);
 
     *hora = lerHora;
@@ -79,6 +71,9 @@ void lerMinuto(int *minuto) {
     do {
         printf("Minuto: ");
         scanf("%d", &lerMinuto);
+        if (lerMinuto < 0 || lerMinuto > 59) {
+            printf("* informe um minuto válido\n");
+        }
     } while (lerMinuto < 0 || lerMinuto > 59);
 
     *minuto = lerMinuto;
@@ -86,7 +81,7 @@ void lerMinuto(int *minuto) {
 
 int converterHorarioParaHoraEmMinuto(int hora, int minuto) {
     int horaEmMinuto = hora * 60 + minuto;
-    while (horaEmMinuto & 60 != 0) {
+    while (horaEmMinuto % 60 != 0) {
         horaEmMinuto++;
     }
     return horaEmMinuto;
@@ -114,13 +109,17 @@ float calcularTarifaDePeriodoEmHora(int periodoEmHora) {
     const float VALOR_3_E_4_HORAS = 1.40;
     const float VALOR_5_HORAS_MAIS = 2.00;
 
-    if (periodoEmHora == 1 || periodoEmHora == 2) {
-        return periodoEmHora * VALOR_1_E_2_HORAS;
+    float tarifaDePeriodoEmHora = 0;
+
+    for (int i = 1; i <= periodoEmHora; i++) {
+        if (i >= 5) {
+            tarifaDePeriodoEmHora += VALOR_5_HORAS_MAIS;
+        } else if (i >= 3) {
+            tarifaDePeriodoEmHora += VALOR_3_E_4_HORAS;
+        } else {
+            tarifaDePeriodoEmHora += VALOR_1_E_2_HORAS;
+        }
     }
 
-    if (periodoEmHora == 3 || periodoEmHora == 4) {
-        return periodoEmHora * VALOR_3_E_4_HORAS;
-    }
-
-    return periodoEmHora * VALOR_5_HORAS_MAIS;
+    return tarifaDePeriodoEmHora;
 }
